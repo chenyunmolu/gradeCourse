@@ -1,0 +1,38 @@
+spring:
+  devtools:
+    restart:
+      enabled: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///gradeCourse
+    username: root
+    password: Zwl1046157732
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+server:
+  port: 8081
+  servlet:
+    context-path: /gradeCourse
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    use-actual-param-name: true
+    use-column-label: true
+jwt:
+  # 令牌加密密钥
+  secret: adjeiqr&*\[4snowwhite_RolleRPeN%PVR-15%7
+  # 令牌有效期（默认30分钟）
+  expirationInMinutes: 30
+
+pagehelper:
+  reasonable: false
+  default-count: true
+
+
+file-save-path: D:/Ruoyi/uploadPath/work/
+excel-save-path: D:/Ruoyi/uploadPath/excel/
+img-save-path: D:/Ruoyi/uploadPath/img/
+avatar-save-path: D:/Ruoyi/uploadPath/avatar/
